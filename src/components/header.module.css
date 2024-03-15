@@ -1,0 +1,126 @@
+.header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  position: sticky;
+  top: 0px;
+  box-shadow: 0px 1px 10px -3px rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  height: 60px;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu a {
+  color: black;
+  padding: 1rem 0.5rem;
+  transition: 200ms;
+}
+
+.menu a:hover {
+  color: #31849b;
+}
+
+.btnMobile {
+  background: black;
+  border-radius: 4px;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+
+.hamburguer {
+  width: 20px;
+  border-top: 2px solid white;
+  color: white;
+  position: relative;
+  position: absolute;
+}
+
+.hamburguer::after,
+.hamburguer::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  margin-top: 5px;
+  position: relative;
+  transition: 300ms;
+}
+
+.btnMobile:focus,
+.btnMobile:hover {
+  outline: none;
+  background: #31849b;
+  box-shadow: 0 0 0 1px #31849b;
+  border-color: #31849b;
+  color: #31849b;
+}
+
+.hamburguerActive {
+  border-top-color: transparent;
+}
+
+.hamburguerActive::before {
+  transform: rotate(135deg);
+}
+
+.hamburguerActive::after {
+  transform: rotate(-135deg);
+  top: -7px;
+}
+
+@media (max-width: 900px) {
+  .menu {
+    display: none;
+  }
+  .menuMobile {
+    display: block;
+    width: 100%;
+    position: fixed;
+    padding: 1rem;
+    top: 60px;
+    right: 0px;
+    background-color: white;
+    text-align: left;
+    border-radius: 0px 0px 0px 4px;
+    animation: animeMenu 300ms forwards;
+  }
+  .menuMobile a {
+    color: black;
+    display: block;
+    transition: 200ms;
+    margin-bottom: 8px;
+  }
+  .menuMobile a:hover {
+    color: #31849b;
+    background-color: #f5f5f5;
+  }
+  @keyframes animeMenu {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+}

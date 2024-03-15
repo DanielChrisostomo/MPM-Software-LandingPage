@@ -1,0 +1,171 @@
+.container {
+  padding: 4rem 8rem 2rem 8rem;
+  background: linear-gradient(
+    135deg,
+    rgba(43, 73, 125, 1) 10%,
+    rgba(34, 75, 144, 1) 50%,
+    rgba(83, 124, 193, 1) 90%
+  );
+  color: white;
+  box-shadow: 1px 1px 18px 1px #888;
+}
+
+.container h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.container p {
+  text-align: center;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 2rem;
+  gap: 3.5rem;
+}
+
+.especificacao p {
+  text-align: justify;
+}
+
+.FastStoreList li {
+  list-style: disc;
+  margin-bottom: 0.2rem;
+}
+
+.computer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.imageSVG {
+  width: 300px;
+  height: 300px;
+}
+
+.segmentos p {
+  font-size: 1.125rem;
+}
+
+.segmentos span {
+  text-align: left;
+  background-color: #fff;
+  color: black;
+  padding: 0px 5px;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.vantagens {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  gap: 2rem;
+}
+
+.icon {
+  width: 120px;
+  height: 120px;
+}
+
+.vantagem {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: justify;
+}
+
+.vantagem details {
+  cursor: pointer;
+}
+
+details[open] {
+  animation: sweep 400ms ease-in-out;
+}
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 3rem 5rem 2rem 5rem;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+  .imageSVG {
+    width: 225px;
+    height: 225px;
+  }
+  .segmentos p {
+    font-size: 14px;
+  }
+  .FastStoreList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 0 0 2rem;
+  }
+  .FastStoreList li {
+    padding-right: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 14px;
+  }
+  .vantagem,
+  .segmentos span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 920px) {
+  .container {
+    padding: 3rem 3.5rem 2rem 3.5rem;
+  }
+  .vantagens {
+    flex-wrap: wrap;
+  }
+  .icon {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 830px) {
+  .container {
+    padding: 3rem 3rem 1rem 3rem;
+  }
+  .icon {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 780px) {
+  .container {
+    padding: 3rem 3rem 1rem 3rem;
+  }
+  .FastStoreList {
+    display: block;
+  }
+  .FastStoreList li {
+    padding: 0;
+    margin: 0.5rem 0;
+  }
+}

@@ -1,0 +1,155 @@
+.container {
+  background: linear-gradient(
+    135deg,
+    rgba(43, 73, 125, 1) 10%,
+    rgba(34, 75, 144, 1) 50%,
+    rgba(83, 124, 193, 1) 90%
+  );
+  text-align: center;
+  padding: 2rem;
+  color: white;
+  box-shadow: 1px 1px 18px 1px #888;
+}
+
+.container h6 {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3rem;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.contatoForm {
+  display: block;
+}
+
+.contatoForm label {
+  display: block;
+  margin-bottom: 4px;
+  text-align: left;
+}
+
+.contatoForm input {
+  display: block;
+  padding: 12px 8px;
+  border: none;
+  border-radius: 4px;
+  width: 350px;
+  outline: none;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.contatoForm textarea {
+  display: block;
+  width: 350px;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 12px 8px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+.btnForm {
+  margin-top: 2rem;
+  display: block;
+  text-align: left;
+  color: black;
+  background-color: white;
+  border: none;
+  transition: 200ms;
+  border: solid 1px white;
+  border-radius: 4px;
+  font-size: 1.125rem;
+  border: none;
+  outline: none;
+  padding: 8px 18px;
+  transition: all ease 0.1s;
+  box-shadow: 0px 1px 10px -3px rgba(0, 0, 0, 0.6);
+}
+
+.btnForm:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px #111;
+}
+
+.contatoInfo {
+  text-align: right;
+}
+
+.contatoInfo > p {
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  position: relative;
+}
+
+.contatoInfo .infoHolder {
+  margin-bottom: 2rem;
+}
+
+.socialMediaHolder {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.socialMediaIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.container footer p {
+  font-size: 0.75rem;
+}
+
+@media (max-width: 1100px) {
+  .box {
+    padding: 1.5rem;
+    width: 720px;
+  }
+}
+
+@media (max-width: 800px) {
+  .box {
+    padding: 3rem 1.5rem;
+    width: 620px;
+  }
+  .contatoForm input,
+  .contatoForm textarea {
+    width: 300px;
+  }
+}
+
+@media (max-width: 700px) {
+  .box {
+    display: block;
+    padding: 0;
+    width: auto;
+  }
+  .contatoForm input,
+  .contatoForm textarea {
+    width: 100%;
+  }
+  .contatoInfo {
+    padding-top: 2rem;
+    text-align: center;
+  }
+  .socialMediaHolder {
+    justify-content: center;
+  }
+  .btnForm {
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    padding: 0.5rem 2rem;
+    text-align: center;
+  }
+}

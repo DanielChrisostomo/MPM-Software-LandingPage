@@ -1,0 +1,89 @@
+/* FONTS */
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@import "./fonts/Poppins-Regular.ttf";
+@import "./fonts/Poppins-Bold.ttf";
+@import "./fonts/Poppins-Medium.ttf";
+@import "./fonts/Poppins-SemiBold.ttf";
+@import "./fonts/Poppins-Light.ttf";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  margin: 0px;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  background-color: #edeefe;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.whatsLink {
+  position: fixed;
+  z-index: 100;
+}
+
+.whatsIcon {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 70px;
+  height: 70px;
+  transition: 200ms;
+}
+
+.whatsIcon:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 800px) {
+  .whatsIcon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* CAROUSEL CSS */
+:root {
+  --swiper-navigation-size: 30px !important;
+  --swiper-navigation-color: black;
+  --swiper-pagination-color: #222;
+  --swiper-pagination-bullet-horizontal-gap: 8px;
+  --swiper-pagination-bullet-vertical-gap: 6px;
+}
