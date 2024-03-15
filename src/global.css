@@ -1,15 +1,14 @@
-/* FONTS */
-
 @font-face {
   font-family: "Poppins";
   src: url("./fonts/Poppins-Regular.ttf") format("truetype");
 }
-
 @import "./fonts/Poppins-Regular.ttf";
 @import "./fonts/Poppins-Bold.ttf";
 @import "./fonts/Poppins-Medium.ttf";
 @import "./fonts/Poppins-SemiBold.ttf";
 @import "./fonts/Poppins-Light.ttf";
+
+/* FONTS */
 
 * {
   box-sizing: border-box;
