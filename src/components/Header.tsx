@@ -1,5 +1,6 @@
 import React from "react";
 import css from "./header.module.css";
+import Logo from "../assets/MPM-Software-Logo.svg";
 
 const Header = () => {
   const [mobileMenu, setMobileMenu] = React.useState(false);
@@ -26,11 +27,7 @@ const Header = () => {
 
   return (
     <header className={css.header}>
-      <img
-        className={css.logo}
-        src="./src/assets/Logo.svg"
-        alt="MPM Software Logo"
-      />
+      <img className={css.logo} src={Logo} alt="MPM Software Logo" />
       <nav className={css.nav}>
         {match && (
           <button
